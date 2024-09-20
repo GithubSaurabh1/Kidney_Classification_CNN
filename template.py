@@ -2,12 +2,12 @@ import os
 from pathlib import Path
 import logging
 
-#logging String
-logging.basicConfig(Level=logging.INFO,format='[%(asctime)s]: %(message)s')
+#logging string
+logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
-project_name='CNNClassifier'
+project_name = 'cnnClassifier'
 
-list_of_files=[
+list_of_files = [
     ".github/workflows/.gitkeep",
     f"src/{project_name}/__init__.py",
     f"src/{project_name}/components/__init__.py",
@@ -24,8 +24,10 @@ list_of_files=[
     "setup.py",
     "research/trials.ipynb",
     "templates/index.html"
-    
+
+
 ]
+
 
 for filepath in list_of_files:
     filepath = Path(filepath)
