@@ -1,1 +1,9 @@
 key: val
+AUGMENTATION: True
+IMAGE_SIZE: [224,224,3]
+BATCH_SIZE: 16
+INCLUDE_TOP: False #not including the fully connected layer
+EPOCHS: 1
+CLASSES: 2
+WEIGHTS: imagenet #pretrain model so weigth is imagnet
+LEARNING_RATE: 0.01
